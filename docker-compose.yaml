@@ -1,0 +1,11 @@
+  portainer:
+    container_name: manage
+    image: 6053537/portainer-ce
+    privileged: true
+    command: -H unix:///var/run/docker.sock
+    restart: always
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /portainer_data:/data
