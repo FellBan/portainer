@@ -1,9 +1,9 @@
 services:
-  qiandao:
+  portainer:
     image: 6053537/portainer-ce
     ports:
       - 9000:9000
     volumes:
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock
       - /portainer_data:/data
