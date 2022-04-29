@@ -3,5 +3,3 @@ services:
     image: 6053537/portainer-ce
     ports:
       - 9000:9000
-    volumes:
-      - /var/run/docker.sock
