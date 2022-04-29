@@ -1,8 +1,7 @@
 services:
-  portainer:
-    image: 6053537/portainer-ce
+  alist:
+    image: xhofe/alist
     ports:
-      - 9000:9000
+      - 5244:5244
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /portainer_data:/data
+      - /etc/alist:/opt/alist/data
