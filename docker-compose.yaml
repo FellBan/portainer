@@ -1,7 +1,12 @@
 services:
-  alist:
-    image: xhofe/alist
+  portainer:
+    #image: portainer/portainer  # 官方版
+    image: 6053537/portainer  # 汉化版
+    container_name: portainer
+    restart: always
     ports:
-      - 5244:5244
+      - "9090:9000"
+      - "8000:8000"
     volumes:
-      - /etc/alist:/opt/alist/data
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
