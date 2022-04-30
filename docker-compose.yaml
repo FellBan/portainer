@@ -1,11 +1,9 @@
 services:
   portainer:
-    #image: portainer/portainer  # 官方版
-    image: 6053537/portainer  # 汉化版
+    image: squidfunk/mkdocs-material
     container_name: portainer
     restart: always
     ports:
-      - "9090:9000"
       - "8000:8000"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /docs squidfunk/mkdocs-material
