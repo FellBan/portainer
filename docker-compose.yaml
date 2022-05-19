@@ -8,4 +8,4 @@ services:
         - TZ=Asia/Shanghai
         - AUTO_UPDATE=true
         - EMAIL=549663411@qq.com
-        - PASSWORD=86121500a--
+        - PASSWORD=
