@@ -1,13 +1,9 @@
   danmuji: # 变更命名
     image: zzcabc/danmuji
     container_name: danmuji # 变更容器名
-    privileged: true
     ports:
       - "23333:23333" # 变更端口
     volumes:
       - /danmuji/Danmuji_log:/danmuji/Danmuji_log
       - /danmuji/guardFile:/danmuji/guardFile
       - /danmuji/log:/danmuji/log
-      options:
-        max-size: "1m"
-        max-file: "2"
