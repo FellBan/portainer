@@ -3,12 +3,6 @@
     container_name: danmuji # 变更容器名
     restart: always
     privileged: true
-    environment:
-      TZ: Asia/Shanghai
-      JAVA_OPTS: "-Xms64m -Xmx128m"
-    build:
-      context: .
-      dockerfile: Dockerfile
     ports:
       - "23333:23333" # 变更端口
     volumes:
