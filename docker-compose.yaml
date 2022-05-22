@@ -1,6 +1,5 @@
   danmuji: # 变更命名
     image: zzcabc/danmuji
-    container_name: danmuji # 变更容器名
     ports:
       - "23333:23333" # 变更端口
     volumes:
