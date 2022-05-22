@@ -4,4 +4,6 @@ services:
     ports:
       - 5465:23333
     volumes:
-      - /usr/src/app/config/
+      - /danmuji/Danmuji_log:/usr/src/app/config/
+      - /danmuji/guardFile:/usr/src/app/config/
+      - /danmuji/log:/usr/src/app/config/
