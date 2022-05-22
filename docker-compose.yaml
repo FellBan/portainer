@@ -9,8 +9,6 @@
       - /danmuji/Danmuji_log:/danmuji/Danmuji_log
       - /danmuji/guardFile:/danmuji/guardFile
       - /danmuji/log:/danmuji/log
-    logging:
-      driver: json-file
       options:
         max-size: "1m"
         max-file: "2"
