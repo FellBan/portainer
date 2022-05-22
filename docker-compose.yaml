@@ -1,11 +1,9 @@
-	services:
-  qiandao:
-    image:registry.cn-hangzhou.aliyuncs.com/zzcabc/danmuji:autoupdate
-   environment:
-      TZ: Asia/Shanghai
+services:
+  bibi:
+    image: registry.cn-hangzhou.aliyuncs.com/zzcabc/danmuji:autoupdate
     ports:
-      - 1320:23333
-     volumes:
+      - 5465:23333
+    volumes:
       - /danmuji/Danmuji_log:/danmuji/Danmuji_log
       - /danmuji/guardFile:/danmuji/guardFile
       - /danmuji/log:/danmuji/log
