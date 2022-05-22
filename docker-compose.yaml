@@ -6,9 +6,6 @@ services:
     environment:
       TZ: Asia/Shanghai
       JAVA_OPTS: "-Xms64m -Xmx128m"
-    build:
-      context: .
-      dockerfile: Dockerfile
     ports:
       - "23333:23333"
     volumes:
